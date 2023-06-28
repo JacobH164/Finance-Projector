@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Budgeter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Current Amount:</p>
+                <input type="text" id="money" name="money" value="0">  
+            </div>
+            <div class="col">
+                <p>Select a date:</p>
+                <input type="date" id="start" name="billStart" value="" min="2023-01-01" max="2024-12-31">
+            </div>
+            <div class="col">
+                <p>How many days out to budget:</p>
+                <input type="text" id="days" name="days" value="120">
+                <button type="submit" id="submit">Submit</button>  
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center">
+        Future Forecast
+    </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col" id="currentMoney">
+
+            </div>
+            <div class="col"  id="bills">
+                
+            </div>
+            <div class="col" id="date">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
