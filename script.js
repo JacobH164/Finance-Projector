@@ -109,8 +109,8 @@ const calculateMoney = () => {
     //update the date for calculations based on user selected date
     updateDate(calanderEl.value);
 
-    billEl.innerHTML = "Current Cash <br/>";
-    currentMoneyEl.innerHTML = "Bills <br/>";
+    billEl.innerHTML ="Bills <br/>";
+    currentMoneyEl.innerHTML =  "Current Cash <br/>";
     dateEl.innerHTML = "Date <br/>";
 
 
