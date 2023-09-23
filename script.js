@@ -17,12 +17,11 @@ const calanderEl = document.querySelector('input[type="date"]');
 calanderEl.setAttribute("value", currentDate.toLocaleDateString("af-ZA"))
 
 //bill amounts
-const internetLoan = -173;
+const internetLoan = -250;
 const carLoan = -372;
 const phoneBill = -100;
 const schoolLoan = -492;
 const insurance = -126;
-const capitalOneCard = -100;
 const payCheck = 550;
 const grocGas = -85;
 
@@ -83,10 +82,6 @@ const checkForBill = (date) => {
         case 27:
             currentMoney = currentMoney + carLoan; 
             updateCol(carLoan, currentMoney, date);
-            break;
-        case 28:
-            currentMoney = currentMoney + capitalOneCard; 
-            updateCol(capitalOneCard, currentMoney, date);
             break;
     }
 }
