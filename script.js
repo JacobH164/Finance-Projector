@@ -20,7 +20,6 @@ calanderEl.setAttribute("value", currentDate.toLocaleDateString("af-ZA"))
 const internetLoan = -250;
 const carLoan = -372;
 const phoneBill = -100;
-const schoolLoan = -492;
 const insurance = -126;
 const payCheck = 550;
 const grocGas = -85;
@@ -66,10 +65,6 @@ const checkForBill = (date) => {
         case 1:
             currentMoney = currentMoney + internetLoan; 
             updateCol(internetLoan, currentMoney, date);
-            break;
-        case 12:
-            currentMoney = currentMoney + schoolLoan; 
-            updateCol(schoolLoan, currentMoney, date);
             break;
         case 14:
             currentMoney = currentMoney + phoneBill; 
